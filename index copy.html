@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -8,12 +7,9 @@
   <script src="js/scripts.js"></script>
   <title>Movies</title>
 </head>
-
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Cheap Movie Tickets</h1>
-    </div>
+    <h2>Cheap Movie Tickets</h2>
     <div class="row">
       <div class="col-md-4">
         <h4>Jaws</h4>
@@ -29,7 +25,6 @@
       </div>
     </div>
     <br>
-    <h3>Movie Title</h3>
     <form id="movie">
       <div class="form-row">
         <div class="col-4">
@@ -40,7 +35,6 @@
           </select>
         </div>
       </div>
-      <h3>Movie Time</h3>
       <div class="form-row">
         <div class="col-4">
           <select id="movieTime" class="form-control">
@@ -49,7 +43,6 @@
           </select>
         </div>
       </div>
-      <h3>Ticket Type</h3>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="senior" id="senior1" value="regular" checked>
         <label class="form-check-label" for="senior1">
@@ -62,20 +55,7 @@
           Senior Admission
         </label>
       </div>
-
-      <h3>Snacks</h3>
-      <label>Snacks ($1ea.)</label>
-      <div class="checkbox">
-        <label><input class="snacks" id=nuts type="checkbox" name="snacks" value="nuts">Nuts</label>
-      </div>
-      <div class="checkbox">
-        <label><input class="snacks" id=popcorn type="checkbox" name="snacks" value="popcorn">Popcorn</label>
-      </div>
-      <div class="checkbox disabled">
-        <label><input class="snacks" id=candy type="checkbox" name="snacks" value="candy">Candy</label>
-
-        <br>
-        <button id="movieSubmit" <button type="submit" class="btn btn-outline-primary">Choose</button>
+      <button id="movieSubmit" <button type="submit" class="btn btn-outline-primary">Choose</button>
 
     </form>
     <!-- results -->
@@ -87,7 +67,35 @@
         </div>
       </div>
     </div>
-    </div>
-</body>
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
 
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</body>
 </html>
