@@ -25,64 +25,45 @@
       </div>
     </div>
     <br>
-        <form id="movie">
-          <div class="form-row">
-            <div class="col-4">
-              <select id="movieName" class="form-control">
-                <option value="Jaws">Jaws</option>
-                <option value="Scarface">Scarface</option>
-                <option value="Star Wars">Star Wars</option>
-              </select>
-            </div>
+    <form id="movie">
+      <div class="form-row">
+        <div class="col-4">
+          <select id="movieName" class="form-control">
+            <option value="Jaws">Jaws</option>
+            <option value="Scarface">Scarface</option>
+            <option value="StarWars">Star Wars</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-4">
+          <select id="movieTime" class="form-control">
+            <option value="Matinee">Matinee</option>
+            <option value="Evening">Evening</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="senior" id="senior1" value="regular" checked>
+        <label class="form-check-label" for="senior1">
+          Regular Admission
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="senior" id="senior2" value="senior">
+        <label class="form-check-label" for="senior2">
+          Senior Admission
+        </label>
+      </div>
+      <button id="movieSubmit" <button type="submit" class="btn btn-outline-primary">Choose</button>
+    </form>
+    <!-- results -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="results">
+          <div id="ticketDisplay">
           </div>
-          <div class="form-row">
-            <div class="col-4">
-              <select id="movieTime" class="form-control">
-                <option value="Matinee">Matinee</option>
-                <option value="Evening">Evening</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="senior" id="senior1" value="option1" checked>
-            <label class="form-check-label" for="senior1">
-              Regular Admission
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="senior" id="senior2" value="option2">
-            <label class="form-check-label" for="senior2">
-              Senior Admission
-            </label>
-          </div>
-          <button id="movieSubmit" <button type="submit" class="btn btn-outline-primary" >Choose</button>
-        </form>
-<!-- movie2 -->
-    <!--
-        <h4>Movie1</h4>
-        <img id="movie2" src="img/movie2.jpg" alt="movie2 poster">
-        <form id="movie12">
-        <select class="form-control">
-          <option>Matinee</option>
-          <option>Evening</option>
-        </select>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="senior" id="senior3" value="option1" checked>
-            <label class="form-check-label" for="senior3">
-              Regular Admission
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="senior" id="senior4" value="option2">
-            <label class="form-check-label" for="senior4">
-              Senior Admission
-            </label>
-          </div>
-          <button id="movie2" <button type="button" class="btn btn-outline-primary">Choose</button>
-        </form> -->
-
-
-
+        </div>
       </div>
     </div>
   </div>
